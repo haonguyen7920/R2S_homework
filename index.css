@@ -1,0 +1,8 @@
+article > h1 {
+  color: hotpink;
+  border-bottom: 10px dotted purple;
+}
+article > h1 + p {
+  color: gray;
+  font-weight: bold;
+}
