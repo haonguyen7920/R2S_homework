@@ -6,3 +6,6 @@ article > h1 + p {
   color: gray;
   font-weight: bold;
 }
+.contact h2 {
+  font-style: italic;
+}
