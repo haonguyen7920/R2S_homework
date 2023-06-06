@@ -1,0 +1,7 @@
+span {
+  border: 4px solid black;
+  background-color: #ffc0cb;
+  display: inline-block;
+  margin: 5px;
+  padding: 15px;
+}
