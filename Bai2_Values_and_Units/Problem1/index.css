@@ -5,15 +5,15 @@ ul > li {
   margin-bottom: 10px;
   padding: 10px;
 }
-ul > li:first-child {
+.hex {
   background-color: #86defa;
 }
-ul > li:nth-child(2) {
+.rgb {
   background-color: rgb(134, 222, 250);
 }
-ul > li:nth-child(3) {
+.hsl {
   background-color: hsl(194, 92%, 75%);
 }
-ul > li:last-child {
+.transparency {
   background-color: rgba(133, 223, 250, 0.2);
 }
