@@ -1,0 +1,24 @@
+p > a {
+  color: orange;
+}
+p > a:visited {
+  color: green;
+}
+p > a:hover {
+  text-decoration: none;
+}
+p:first-of-type {
+  font-size: 150%;
+}
+p:first-of-type::first-line {
+  color: red;
+}
+table {
+  border-spacing: 0;
+  width: 25%;
+  text-align: left;
+}
+table tr:nth-child(even) {
+  background-color: #333;
+  color: white;
+}
