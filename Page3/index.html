@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML Form Elements</h1>
+    <form action="">
+      <label for="name">Tên:</label>
+      <input type="text" id="name" name="name" /><br />
+      <label for="age">Tuổi:</label>
+      <input type="text" id="age" name="age" /><br />
+      <label for="country">Quốc gia:</label>
+      <select name="country" id="country">
+        <option value="">Việt Nam</option>
+        <option value="">Trung Quốc</option>
+        <option value="">Nhật Bản</option></select
+      ><br />
+      <label for="married">Đã có gia đình chưa?:</label>
+      <input
+        type="checkbox"
+        id="married"
+        name="married"
+        value="married"
+      /><br />
+      <label for="dateOfBirth">Ngày sinh:</label>
+      <input
+        type="date"
+        id="dateOfBirth"
+        name="dateOfBirth"
+        value="dd/mm/yyyy"
+      />
+      <br />
+      <label for="gender">Giới tính:</label>
+      <input type="radio" id="male" name="fav_gender" value="Male" /><label
+        for="male"
+        >Nam</label
+      >
+      <input type="radio" id="female" name="fav_gender" value="Female" /><label
+        for="female"
+        >Nữ</label
+      ><br />
+      <label for="note">Ghi chú thêm:</label>
+      <textarea id="note" name="note" rows="4" cols="40"></textarea><br />
+      <label for="myfile">Ảnh chụp căn cước công dân:</label>
+      <input type="file" id="myfile" name="myfile" /><br /><br />
+      <input type="submit" value="Gửi" />
+      <input type="button" value="Đặt lại" />
+    </form>
+  </body>
+</html>
