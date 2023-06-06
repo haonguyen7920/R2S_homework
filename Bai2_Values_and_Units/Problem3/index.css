@@ -1,0 +1,8 @@
+.box {
+  border: 5px solid black;
+  width: 400px;
+  height: 200px;
+  background-image: url(https://mdn.github.io/css-examples/learn/tasks/values/star.png);
+  background-repeat: no-repeat;
+  background-position: center 20%;
+}
