@@ -1,0 +1,9 @@
+h2 {
+  color: red;
+}
+ul#main {
+  list-style: none;
+}
+ul#main > li {
+  border-bottom: 1px solid grey;
+}
