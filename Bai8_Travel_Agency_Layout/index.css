@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-image: url(./image/beach3.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 600px;
+  display: flex;
+  align-items: end;
+  padding-bottom: 3rem;
+}
+header h1 {
+  background-color: rgba(247, 194, 68, 0.6);
+  width: 70vw;
+  font-size: 4rem;
+  padding: 2rem;
+}
+article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 80px 50px;
+  gap: 50px;
+}
+.article_item {
+  border-top: 10px solid #f7c244;
+}
+.article_item img {
+  width: 100%;
+  object-fit: cover;
+}
+.article_item h2 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.article_item p {
+  font-size: 1.5rem;
+}
