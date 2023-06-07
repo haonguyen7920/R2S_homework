@@ -1,0 +1,16 @@
+.box {
+  border: 5px solid lightblue;
+  width: 300px;
+  padding: 1rem 0.5rem;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 40px;
+}
+h2 {
+  font-size: 2.5rem;
+  padding: 0 1rem;
+  text-align: center;
+  background-image: url(https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png),
+    url(https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png);
+  background-repeat: no-repeat, repeat-y;
+  background-position: center left, center right;
+}
