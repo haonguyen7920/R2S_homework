@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+.outer-box {
+  border: 5px solid black;
+}
+.inner-box {
+  border-radius: 10px;
+  background-color: rebeccapurple;
+  color: white;
+  font-size: 2em;
+  width: 60%;
+  padding: 10%;
+}
