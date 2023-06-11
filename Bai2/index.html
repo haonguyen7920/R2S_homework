@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Quiz App</h1>
+    <div id="form"></div>
+    <div
+      id="btn"
+      style="
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      "
+    >
+      <button
+        id="prevButton"
+        onclick="handlePrevQuestion()"
+        style="padding: 10px"
+      >
+        Previous Question
+      </button>
+      <button
+        id="nextButton"
+        onclick="handleNextQuestion()"
+        style="padding: 10px"
+      >
+        Next Question
+      </button>
+    </div>
+    <div
+      id="submit"
+      style="
+        display: none;
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <button onclick="handleSend()" style="padding: 10px">Gửi</button>
+      <p id="result" style="color: red"></p>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
