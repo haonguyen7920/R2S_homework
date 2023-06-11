@@ -9026,24 +9026,16 @@ function problem03() {
 }
 function problem04() {
   // return new array of user where the key of each record in new array is camelCase
-  var newArr = users.map(
-    ({ id, first_name, last_name, email, gender, age, salary }) => ({
-      id,
-      firstName: first_name,
-      lastName: last_name,
-      email,
-      gender,
-      age,
-      salary,
-    })
-  );
+  var newArr = users.map(({ first_name, last_name, ...rest }) => ({
+    firstName: first_name,
+    lastName: last_name,
+    ...rest,
+  }));
   return newArr;
 }
 function problem05() {
   // return the average age in users
-  var result = users.reduce((sum, item) => {
-    return sum + item.age;
-  }, 0);
+  var result = users.reduce((sum, item) => sum + item.age, 0);
   result /= users.length;
   return result;
 }
@@ -9065,8 +9057,15 @@ function problem0602() {
 }
 function problem0603() {
   // return new array where the key of each record is in camelCase using Array.prototype.reduce
+  var newArr = users.reduce(
+    (c, { first_name, last_name, ...rest }) => [
+      ...c,
+      { firstName: first_name, lastName: last_name, ...rest },
+    ],
+    []
+  );
+  return newArr;
 }
-
 function problem07() {
   // return the sorted array of user (sort by field first_name in ascending order)
 }
