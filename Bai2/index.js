@@ -78,7 +78,7 @@ document.getElementById(`question${id}`).style.display = "block";
 let handleNextQuestion = () => {
   let checked = document.querySelector(`input[name="answer${id}"]:checked`);
   if (checked == null) {
-    return alert("Vui lòng trả lời câu hỏi!");
+    return alert("Vui lòng chọn câu trả lời!");
   }
   id++;
   document.getElementById(`question${id}`).style.display = "block";
@@ -100,16 +100,18 @@ let handlePrevQuestion = () => {
 let handleSend = () => {
   let checked = document.querySelector(`input[name="answer${id}"]:checked`);
   if (checked == null) {
-    return alert("Vui lòng trả lời câu hỏi!");
+    return alert("Vui lòng chọn câu trả lời!");
   }
   let sumQuestions = myQuestions.length;
   let count = 0;
-  for (let i = 0; i < sumQuestions; i++) {
-    let checked = document.querySelector(`input[name="answer${i}"]:checked`);
-    if (checked.value == myQuestions[i].correctAnswer) {
+  myQuestions.forEach((item, index) => {
+    let checked = document.querySelector(
+      `input[name="answer${index}"]:checked`
+    );
+    if (checked.value == item.correctAnswer) {
       count++;
     }
-  }
+  });
   let point = (10 / sumQuestions) * count;
   document.getElementById("result").innerText = `Điểm của bạn là: ${point}`;
 };
