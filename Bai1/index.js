@@ -100,8 +100,8 @@ let handleSubmit = () => {
       count++;
     }
   }
-  let point = (10 / sumQuestions) * count;
-  document.getElementById("result").innerText = `Điểm của bạn là: ${point}`;
+  let score = (10 / sumQuestions) * count;
+  document.getElementById("result").innerText = `Điểm của bạn là: ${score}`;
   window.scrollTo(0, document.body.scrollHeight);
   showAnswers();
 };

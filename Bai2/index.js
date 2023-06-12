@@ -112,6 +112,6 @@ let handleSend = () => {
       count++;
     }
   });
-  let point = (10 / sumQuestions) * count;
-  document.getElementById("result").innerText = `Điểm của bạn là: ${point}`;
+  let score = (10 / sumQuestions) * count;
+  document.getElementById("result").innerText = `Điểm của bạn là: ${score}`;
 };
