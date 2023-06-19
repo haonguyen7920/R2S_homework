@@ -1,0 +1,12 @@
+header {
+  background-color: #e6f7ff;
+}
+h1 {
+  text-align: left;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  color: rgb(8, 126, 164);
+}
